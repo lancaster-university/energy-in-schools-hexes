@@ -1,0 +1,6 @@
+Issues:
+    - Copying old hex files into modified editor doesn't compile (telling teachers to do this wont work)
+    - Github autoupdate translations.json doesn't look for version number changes (if temp_trans < trans should be <=)
+    - A few "gather" hex files use 360000ms, which is 6 minutes
+    - Odd one off error when there was no hub traffic, Data = 99e rt = 129
+    

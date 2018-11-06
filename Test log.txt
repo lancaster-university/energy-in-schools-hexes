@@ -1,0 +1,110 @@
+Session 1 Carbon Generation 3 sources solar A gas B coal AB
+    - Working
+    
+Session 1 Carbon Generation nuclear A smiley B nuclear 5
+    -Working
+    
+Session 1 Carbon Generation solar A smiley B solar 2
+    - Working
+    
+    
+
+Session 2 Carbon index every 30 minutes
+    - Had to change wait functions
+    - Working
+    
+Session 2 Energy monitor watts A calibration B
+    - TO TEST (already tested this pretty thouroughly)
+    
+Session 2 Energy monitor watts A calibration B collect 30 seconds AB
+    - Working
+    
+Session 2 Fan and Temp
+    - Hub bug causing an exception causing it to return a bad packet
+        - get sensor temperature("Motionsensor")
+
+Session 2 Forever gather carbon index every 30 minutes
+    - Working
+
+Session 2 Gather carbon index every 30 minutes
+    - Working
+    
+Session 2 Get electrical energy A arrows B
+    - 401 response
+        - energy.querySchoolEnergy(EnergyType.electricity) responds with OK but response code 401 - data 0
+        - Fixed when base URL was changed to staging site, all seems good for live site
+    - Working
+    
+Session 2 Get electrical energy last week A arrows B
+    - Working
+    
+    
+    
+Session 3 Activity 2 Calibrated Temperature
+    - Working
+    
+Session 3 Activity 2 Gather Temperature 5 minutes
+    - Working, changed from 6 minutes to 5 minutes
+    
+Session 3 Activity 2 Temperature Calibration
+    - Working
+    - Removed 20 minute wait
+    
+Session 3 Activity 2 Temperature Sensor
+    - Working
+    - Added middle clause + removed 20 minutes wait
+    
+Session 3 Activity 2 Temperature Sensor Else
+    - Working, added else "just right", also still 20 minutes wait?
+    
+Session 3 Activity 3 Gather Light
+    - 6 minutes?
+    - Working, first value seems to always be 255
+
+Session 3 Activity 3 Light Calibration
+    - Working
+    
+Session 3 Activity 3 Light Sensor
+    - Working
+    - Changed the threshold from 100 to 70
+    
+Session 3 Activity 4 Door Calibration
+    - Working
+    
+Session 3 Activity 4 Door Sensor
+    - Working
+    
+Session 3 Activity 4 Gather Door
+    - 6 minutes?
+    - Working
+    
+Session 3 Activity 5 Radio Alarm
+    - Working
+    
+Session 3 Activity 5 Radio Door Sensor
+    - Working
+    
+Session 3 Activity 5 Radio Light Sensor
+    - Working
+    - Added radio send number 0 for else clause
+    
+Session 3 Activity 5 Radio Send Numbers
+    - Working
+    - Doesn't have a "You pressed B!" else clause
+    
+Session 3 Activity 5 Radio Send Text
+    - Working
+    
+Session 3 Activity 5 Radio Temperature Sensor
+    - Working
+    - No middle else clause
+    
+    
+Session 4 Comparing Energy Use
+    - Working
+    - Not very easy to test the logic, but the data retreival works
+    
+Session 4 Comparing Energy Use Yesterday
+    - Working
+    - Not very easy to test the logic, but the data retreival works
+    - Had to change "get energy levels" to "get energy levels from yesterday"
